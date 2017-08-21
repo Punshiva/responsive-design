@@ -1,0 +1,528 @@
+@import url(https://fonts.googleapis.com/css?family=Hind); /*--- Body Font --*/
+@import url(https://fonts.googleapis.com/css?family=Nobile); /*--- Heading Font --*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+*,
+*:after,
+*::before{
+margin:0;
+border:0;
+padding:0;
+box-sizing: border-box;
+}
+
+
+
+body{
+background-color:#FFF;
+font-family: 'Hind', sans-serif;
+font-size: 18px;
+position:relative;
+overflow-x: hidden;
+min-height:100%;
+}
+.fixed-nav-bar{
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 50px;
+	background-color: #484b50;
+}
+h1{
+font-family: 'Nobile', sans-serif;
+text-align:center;
+font-size:175%;
+color:#4A4444;
+text-transform: uppercase;
+letter-spacing: 3px;
+padding: 20px 0;	
+}
+h3{
+font-family: 'Nobile', sans-serif;
+text-align:center;
+font-size:175%;
+color:#4A4444;
+text-transform: uppercase;
+letter-spacing:1%;	
+}
+p{
+padding: 2%;
+color:rgba(0,0,0,0.85);
+text-align: justify;
+line-height: 2em;	
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+#banner-wrapper{
+	max-width: 1280px;
+	margin:0 auto;
+}
+/*Start Image Slider Style*/
+.slider{
+	width: 100%;
+
+}
+.slider1 img{
+	min-width: 100%;
+	margin:0 auto;
+}
+.slider .bx-wrapper .bx-controls-direction a {
+outline: 0 none;
+position: absolute;
+text-indent: -9999px;
+top:40%;
+height:71px;
+width: 40px;
+z-index:-1;
+transition: all 0.7s;	
+}
+.slider .bx-wrapper:hover .bx-controls-direction a{
+	z-index:5;
+}
+.slider .bx-wrapper .bx-prev{
+	background:#000 url("images/left-arrow-white.png") no-repeat 8px 13px;
+	left:0px;
+	opacity: 0.3; 
+}
+.slider .bx-wrapper .bx-prev:hover{
+	opacity: 0.6; 
+}
+.slider .bx-wrapper .bx-next{
+	background:#000 url("images/right-arrow-white.png") no-repeat 10px 12px;
+	right:0px;
+	opacity: 0.3; 
+}
+.slider .bx-wrapper .bx-prev:hover{
+	opacity: 0.6; 
+}
+
+
+/*End Image Slider Style*/
+
+.one-half{
+width:44%;
+float:left;
+margin: 2% 0 3% 4%;
+text-align:center; 
+}
+.one-third {
+	width: 28%;
+	float:left;
+	margin:2% 0 3% 4%;
+	text-align: center;
+}
+.left-col{
+	width: 60%;
+	float:left;
+	margin: 4% 0 4% 4%;
+}
+.sidebar{
+	width: 26%;
+	float:right;
+	margin:4% 4%;
+
+}
+.sidebar img{
+	opacity: 0.8;
+}
+.clearfix {
+	clear: both;
+	}
+/*Start Parallax Section*/
+.parallax-1{
+	/*background:url("images/rhododendron.jpg") repeat fixed 100%;
+	text-align: center;*/
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/rhododendron.jpg") repeat fixed 100%;
+    
+}
+.parallax-inner {
+	padding-top: 90px;
+	padding-bottom: 400px;
+}
+.parallax-2{
+	background:linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/pokhara.jpg") repeat fixed 100%;
+	text-align: center;
+}
+.parallax-inner h3, .parallax-inner p{
+	color:#F1F1F1;
+	padding-bottom: 2em;
+	line-height: 30px;
+}
+/*End Parallax Section*/
+footer{
+	background: #262E37;
+	opacity: 0.9;
+	width: 100%;
+	margin-top: 5%;
+	padding: 1% 0;
+	overflow: auto;
+
+}
+footer p{
+	color:#FFF;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+ .slider .bx-wrapper .bx-controls{
+ 	display: none;
+ }
+ .parallax-inner {
+ 	display: none;
+ }
+ .one-third {
+ 	width: 100%;
+ 	margin: 4% 0;
+ }
+ .one-half {
+ 	display: none;
+ }
+ h1{
+ 	font-size: 125%;
+ }	
+ .left-col {
+ 	width: 100%;
+ 	margin: 0 0 3% 0;
+ }
+ .sidebar{
+ 	width: 100%;
+ 	margin: 0;
+ }
+ img{
+ 	width: 100%;
+ }
+ h3{padding-top:3%;
+ }
+}
+
+.banner{
+	width:100%;
+	padding-bottom: 2em;
+}
+@media all and(max-width:959px) and(min-width:600px) {
+	.banner{
+		width: 100%;
+	}
+}
+@media all and(max-width:599px) and(min-width:320px) {
+	width:100%;
+}
+.skills-diagram {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 35em;
+  margin: 2em auto 2em;
+}
+.skills-diagram > dd {
+  /* Hide inner attributes */
+  display: none;
+}
+.skills-diagram dt {
+  display: inline-block;
+  vertical-align: top;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  
+  -webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+  
+  /* set defaults to skill-2 */
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.skills-diagram dt:hover {
+  -webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+/* Support vertical mode */
+.skills-diagram-vertical dt {
+  display: block;
+  /* .25em is an equivalent to inline-block's horizontal whitespace margin */
+  margin: .25em auto;
+}
+
+/* Provide 10 different sizes */
+.skills-diagram .skill-2 {
+  width: 6em;
+  height: 2em;
+  line-height: 2em;
+  
+  background-color: rgba(201, 155, 129, .3);
+  border-color: rgba(201, 155, 129, 1);
+  color: rgba(201, 155, 129, 1);
+}
+.skills-diagram .skill-3 {
+  vertical-align: middle;
+  
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  background-color: rgba(138, 138, 140, .3);
+  border-color: rgba(138, 138, 140, 1);
+  color: rgba(138, 138, 140, 1);
+}
+.skills-diagram .skill-4 {
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  
+  background-color: rgba(234, 112, 97, .3);
+  border-color: rgba(234, 112, 97, 1);
+  color: rgba(234, 112, 97, 1);
+}
+.skills-diagram .skill-5 {
+  vertical-align: bottom;
+
+  width: 6em;
+  height: 5em;
+  line-height: 5em;
+  background-color: rgba(109, 182, 173, .3);
+  border-color: rgba(109, 182, 173, 1);
+  color: rgba(109, 182, 173, 1);
+}
+.skills-diagram .skill-6 {
+  vertical-align: top;
+  
+  width: 6em;
+  height: 6em;
+  line-height: 6em;
+  
+  background-color: rgba(195, 192, 100, .3);
+  border-color: rgba(195, 192, 100, 1);
+  color: rgba(195, 192, 100, 1);
+}
+.skills-diagram .skill-7 {
+  width: 7em;
+  height: 7em;
+  line-height: 7em;
+  
+  background-color: rgba(214, 89, 102, .3);
+  border-color: rgba(214, 89, 102, 1);
+  color: rgba(214, 89, 102, 1);
+}
+.skills-diagram .skill-8 {
+  vertical-align: bottom;
+  
+  width: 8em;
+  height: 8em;
+  line-height: 8em;
+  background-color: rgba(46, 138, 75, .3);
+  border-color: rgba(46, 138, 75, 1);
+  color: rgba(46, 138, 75, 1);
+}
+.skills-diagram .skill-9 {
+  width: 11em;
+  height: 11em;
+  line-height: 11em;
+  
+  background-color: rgba(177, 18, 2, .3);
+  border-color: rgba(177, 18, 2, 1);
+  color: rgba(177, 18, 2, 1);
+}
+.skills-diagram .skill-10 {
+  width: 14em;
+  height: 14em;
+  line-height: 14em;
+  background-color: rgba(81, 112, 144, .3);
+  border-color: rgba(81, 112, 144, 1);
+  color: rgba(81, 112, 144, 1);
+}
+
+/* TITLES
+===================================================== */
+.pageTitle{
+	display: block;
+	margin:0 0 0.2em 0;
+	font-size: 2.2em;
+	line-height: 1em;
+	color:#3CA0D0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300,200);
+
+@import url(https://fonts.googleapis.com/css?family=Croissant+One);
+
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+	background: #E4E4E4;
+}
+
+body {
+	padding: 1px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 22px;
+  color: #666;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* TITLES
+===================================================== */
+.pageTitle {
+	display: block;
+	margin: 0 0 0.2em 0;
+	font-size: 2.2em;
+	line-height: 1em;
+	color: #3CA0D0;
+}
+
+.pageSubtitle {
+	display: block;
+	margin: 0 0 0.4em 0;
+	font-size: 1.4em;
+	line-height: 1em;
+	color: #333;
+}
+
+/* EFFECTS
+===================================================== */
+.roundedCorners {
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.roundedCornersTop {
+	-webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.roundedCornersBottom {
+	-webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.boxShadow {
+	-webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+	box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* LAYOUT
+===================================================== */
+.wrapper {
+	width: 600px;
+	margin: 20px auto;
+}
+
+	.top {
+		width: 100%;
+		min-height: 300px;
+		padding: 20px 0;
+		text-align: center;
+	}
+	
+	.main {
+		width: 96%;
+		padding: 2% 2% 5% 2%;
+    margin: 5% 0;
+		background: none;
+    border-bottom: solid 1px #ccc;
+	}
+	
+	.footer {
+		width: 96%;
+		padding: 2%;
+		background: #222;
+		border-top:
+			solid
+			3px
+			#086FA1;
+	}
+	.title{
+		font-size: 30px;
+		color:white;
+	}
+	.subtitle{
+		color:#f2f2f2;
+	}
+/* GALLERY
+===================================================== */
+.gallery{
+	background-color:#33bebe;
+	color:white;
+	font-weight:normal;
+	padding:0.75em 0.5em 0;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	margin-top: 20px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	border:0px solid #000000;
+}
+
+
+/* CONTACT
+===================================================== */
+contact .fa:before{
+	display: inline-block;
+	opacity:0.7;
+}
+
+.contact li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 1em;
+	text-align: center;
+}
+.contact p{
+	text-align: center;
+}
+.contact{
+	display: inline-block;
+	margin:0 auto;
+	padding-left: 0;
+}
+.cont{
+	text-align: center;
+	background:currentColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
